@@ -1,38 +1,102 @@
-.App {
-  text-align: center;
+body{
+  background-color: #8d8d8d;
+  user-select: none;
+  font-family: Russo One;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#root{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+#drum-machine{
+  background-color: #b3b3b3;
+  text-align: center;
+  width: 660px;
+  position: relative;
+  border: #ffa500 solid 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#pad-bank{
+  display: inline-block;
+  width: 332px;
+  height: 272px;
+  margin: 20px;
+}
+
+.drum-pad{
+  background-color: #808080;
+  float: left;
+  width: 100px;
+  height: 80px;
+  margin-right: 10px;
+  border-radius: 5px;
+  padding-top: 35px;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin-top: 10px;
+  padding-top: 35px;
+  box-shadow: black 3px 3px 5px;
+  font-weight: bolder;
+}
+
+#controls-container{
+  width: 240px;
+  height: 272px;
+  display: inline-block;
+  margin: 40px 20px 0 10px;
+  vertical-align: top;
+}
+
+#display{
+  width: 200px;
+  height: 51px;
+  background-color: gray;
+  margin: 15px auto;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+p{
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  margin: 16px 0 0;
+}
+
+.control{
+    width: 100px;
+    margin: auto;
+}
+
+.select{
+  margin: auto;
+  border: 1px solid black;
+  width: 50px;
+  height: 20px;
+  padding: 1px;
+  background-color: black;
+}
+
+.inner{
+  width: 23px;
+  height: 19px;
+  background: blue;
+  border: 1px solid black;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+
+
+.inner-container .controls-container .control p {
+  margin-bottom: 0;
+}
+
+*:focus{
+  outline: none;
 }
